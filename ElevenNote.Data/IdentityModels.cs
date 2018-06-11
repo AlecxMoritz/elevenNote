@@ -37,7 +37,8 @@ namespace ElevenNote.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
-                .Conventions.Remove<PluralizingTableNameConvention>();
+                .Conventions
+                .Remove<PluralizingTableNameConvention>();
 
             modelBuilder
                 .Configurations
